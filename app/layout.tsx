@@ -12,6 +12,18 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  openGraph: {
+    type: "website",
+    title: "Business App -Asikur",
+    siteName: "Business App",
+    url: "https://businessapp-asikur.vercel.app/",
+    images: [
+      {
+        url: "https://res.cloudinary.com/asikur/image/upload/v1704219718/Screenshot_551_x7x5sq.png",
+      },
+    ],
+  },
+  authors: [{ name: "Asikur Rahman", url: "https://asikur.vercel.app" }],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
