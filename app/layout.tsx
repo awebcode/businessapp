@@ -7,10 +7,11 @@ import Footer from "./components/home/Footer";
 export const metadata: Metadata = {
   title: "Business App -Asikur",
   description: "Asikur Business app",
-  keywords: "asikur,asikur portfolio,asikur business app, asikur,ashikur asikur rahman,ecommerce website,website themes,top website,web design,website,website development",
+  keywords:
+    "asikur,asikur portfolio,asikur business app, asikur,ashikur asikur rahman,ecommerce website,website themes,top website,web design,website,website development",
   icons: {
-    icon:"/favicon.ico"
-  }
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

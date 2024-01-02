@@ -5,17 +5,18 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <footer className="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
+      <footer className="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100 dark:bg-gradient-to-r dark:from-slate-900 dark:via-slate-800 dark:to-slate-950">
         <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
-              <Image
-                src="/vercel.svg"
+              <h1 className="text-4xl uppercase font-extrabold tracking-tight">Asikur</h1>
+              {/* <Image
+                src="/next.svg"
                 className="mr-5 h-6 sm:h-9"
                 alt="logo"
                 height={80}
                 width={60}
-              />
+              /> */}
               <p className="max-w-xs mt-4 text-sm text-gray-600">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
                 accusantium.
@@ -121,7 +122,7 @@ const Footer = () => {
             </div>
             <div className="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
               <div>
-                <p className="font-medium  dark:text-slate-800 text-xl">Company</p>
+                <p className="font-medium  dark:text-white text-xl">Company</p>
                 <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
                   <Link className="hover:opacity-75" href="/">
                     {" "}
@@ -142,7 +143,7 @@ const Footer = () => {
                 </nav>
               </div>
               <div>
-                <p className="font-medium  dark:text-slate-800 text-xl">Services</p>
+                <p className="font-medium  dark:text-white text-xl">Services</p>
                 <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
                   <Link className="hover:opacity-75" href="/">
                     {" "}
@@ -167,7 +168,7 @@ const Footer = () => {
                 </nav>
               </div>
               <div>
-                <p className="font-medium  dark:text-slate-800 text-xl">Helpful Links</p>
+                <p className="font-medium  dark:text-white text-xl">Helpful Links</p>
                 <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
                   <Link className="hover:opacity-75" href="/">
                     {" "}
@@ -184,8 +185,8 @@ const Footer = () => {
                 </nav>
               </div>
               <div>
-                <p className="font-medium dark:text-slate-800 text-xl">Legal</p>
-                <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                <p className="font-medium dark:text-white text-xl">Legal</p>
+                <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-600">
                   <Link className="hover:opacity-75" href="/">
                     {" "}
                     Privacy Policy{" "}
@@ -206,7 +207,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <p className="mt-8 text-xs text-gray-800">© 2024 Asikur</p>
+          <p className="mt-8 text-xs text-gray-500">© 2024 Asikur</p>
         </div>
       </footer>
     </div>
