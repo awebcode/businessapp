@@ -7,8 +7,10 @@ import Projects from "./components/home/Projects";
 import ScrollToTop from "./components/extra/SCrollToTop";
 import Practice from "./components/home/Login";
 import Featurs from "./components/home/Featurs";
+import { wait } from "./actions/wait";
 
-export default function Main() {
+export default async function Main() {
+  // await wait(3000)
   return (
     <div className="pt-16">
       <Home />

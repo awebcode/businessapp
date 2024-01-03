@@ -1,10 +1,11 @@
 import React from "react";
-import Landing2 from "../components/fullpage/Landing2";
+import { BoxesCore } from "./Grid-color";
 
 const page = () => {
   return (
     <div>
-      <Landing2 />
+      {" "}
+      <BoxesCore />
     </div>
   );
 };

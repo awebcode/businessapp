@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import NextThemeProviders from "./context/NextThemeProvider";
-import NavBar from "./components/navbar/Navbar";
-import Footer from "./components/home/Footer";
-import ScrollToTop from "./components/extra/SCrollToTop";
-import OneNav from "./components/navbar/OneNav";
+import NextThemeProviders from "../context/NextThemeProvider";
+import Footer from "../components/home/Footer";
+import DashboardNavbar from "./components/navbar/Navbar";
+
 
 export const metadata: Metadata = {
   title: "Business App -Asikur",
@@ -30,33 +28,27 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  team,
-  dashboard,
+ 
 }: {
   children: React.ReactNode;
-  team: React.ReactNode;
-  dashboard: React.ReactNode;
+ 
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body>
-        <NextThemeProviders>
-          {" "}
+    <>
+     
+       
           {/* <OneNav/> */}
           <header>
-            <NavBar />
+            <DashboardNavbar />
           </header>
           <main className="">
             {children}
             {/* {team} ###parallel routes
             {dashboard} */}
           </main>
-          <footer>
-            <Footer />
-          </footer>
-          <ScrollToTop />
-        </NextThemeProviders>
-      </body>
-    </html>
+          
+          {/* <ScrollToTop /> */}
+      
+    </>
   );
 }

@@ -1,10 +1,10 @@
 import React from "react";
-import Landing3 from "../components/fullpage/Landing3";
+import { AnimatedPinDemo } from "./3d";
 
 const page = () => {
   return (
     <div>
-      <Landing3 />
+      <AnimatedPinDemo />
     </div>
   );
 };

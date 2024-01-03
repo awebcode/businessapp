@@ -1,10 +1,10 @@
 "use client";
+import ThemeButton from "@/app/components/navbar/ThemeButton";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import ThemeButton from "./ThemeButton";
 
-function NavBar() {
+function DashboardNavbar() {
   const [navbar, setNavbar] = useState(false);
   return (
     <div>
@@ -14,7 +14,9 @@ function NavBar() {
             <div className="flex items-center justify-between py-2 md:py-5  md:block">
               {/* LOGO */}
               <Link className="dark:text-white" href="/">
-                <h2 className="text-2xl  font-bold uppercase dark:text-white">Ashik</h2>
+                <h2 className="text-2xl  font-bold uppercase dark:text-white">
+                  Animated Layout
+                </h2>
               </Link>
               {/* HAMBURGER BUTTON FOR MOBILE */}
               <div className="md:hidden">
@@ -47,7 +49,7 @@ function NavBar() {
                 <li className="pb-4  dark:text-white text-sm  py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-orange-500 hover:text-white  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <Link
                     className="dark:text-white"
-                    href="#home"
+                    href="/"
                     onClick={() => setNavbar(!navbar)}
                   >
                     Home
@@ -59,34 +61,43 @@ function NavBar() {
                     href="/pin-3d"
                     onClick={() => setNavbar(!navbar)}
                   >
-                    Animation
+                    3d pin
                   </Link>
                 </li>
                 <li className="pb-4  dark:text-white text-sm  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <Link
                     className="dark:text-white"
-                    href="/landingpage-1"
+                    href="/radar"
                     onClick={() => setNavbar(!navbar)}
                   >
-                    Landing 1
+                    Radar
                   </Link>
                 </li>
                 <li className="pb-4  dark:text-white text-sm  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <Link
                     className="dark:text-white"
-                    href="/landingpage-2"
+                    href="/grid-dot"
                     onClick={() => setNavbar(!navbar)}
                   >
-                    Landing 2
+                    Grid Dot BG
                   </Link>
                 </li>
                 <li className="pb-4  dark:text-white text-sm  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <Link
                     className="dark:text-white"
-                    href="/landingpage-3"
+                    href="/hoverlight"
                     onClick={() => setNavbar(!navbar)}
                   >
-                    Landing 3
+                    HoverLight
+                  </Link>
+                </li>
+                <li className="pb-4  dark:text-white text-sm  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <Link
+                    className="dark:text-white"
+                    href="/grid-color"
+                    onClick={() => setNavbar(!navbar)}
+                  >
+                    Grid color
                   </Link>
                 </li>
                 <li className="pb-4  dark:text-white text-sm  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
@@ -101,4 +112,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default DashboardNavbar;
