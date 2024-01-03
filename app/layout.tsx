@@ -3,6 +3,7 @@ import "./globals.css";
 import NextThemeProviders from "./context/NextThemeProvider";
 import NavBar from "./components/navbar/Navbar";
 import Footer from "./components/home/Footer";
+import ScrollToTop from "./components/extra/SCrollToTop";
 
 export const metadata: Metadata = {
   title: "Business App -Asikur",
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <footer>
             <Footer />
           </footer>
+          <ScrollToTop />
         </NextThemeProviders>
       </body>
     </html>

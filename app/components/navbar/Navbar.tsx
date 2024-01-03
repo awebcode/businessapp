@@ -45,28 +45,48 @@ function NavBar() {
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="pb-4  dark:text-white text-sm  py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-orange-500 hover:text-white  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link className="dark:text-white" href="#home" onClick={() => setNavbar(!navbar)}>
+                  <Link
+                    className="dark:text-white"
+                    href="#home"
+                    onClick={() => setNavbar(!navbar)}
+                  >
                     Home
                   </Link>
                 </li>
                 <li className="pb-4  dark:text-white text-sm  py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-orange-500 hover:text-white  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link className="dark:text-white" href="#about" onClick={() => setNavbar(!navbar)}>
+                  <Link
+                    className="dark:text-white"
+                    href="#about"
+                    onClick={() => setNavbar(!navbar)}
+                  >
                     About
                   </Link>
                 </li>
                 <li className="pb-4  dark:text-white text-sm  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link className="dark:text-white" href="#blog" onClick={() => setNavbar(!navbar)}>
-                    Blogs
+                  <Link
+                    className="dark:text-white"
+                    href="/landingpage-1"
+                    onClick={() => setNavbar(!navbar)}
+                  >
+                    Landing 1
                   </Link>
                 </li>
                 <li className="pb-4  dark:text-white text-sm  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link className="dark:text-white" href="#contact" onClick={() => setNavbar(!navbar)}>
-                    Contact
+                  <Link
+                    className="dark:text-white"
+                    href="/landingpage-2"
+                    onClick={() => setNavbar(!navbar)}
+                  >
+                    Landing 2
                   </Link>
                 </li>
                 <li className="pb-4  dark:text-white text-sm  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link className="dark:text-white" href="#projects" onClick={() => setNavbar(!navbar)}>
-                    Projects
+                  <Link
+                    className="dark:text-white"
+                    href="/landingpage-3"
+                    onClick={() => setNavbar(!navbar)}
+                  >
+                    Landing 3
                   </Link>
                 </li>
                 <li className="pb-4  dark:text-white text-sm  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">

@@ -5,6 +5,8 @@ import Blog from "./components/home/Blog";
 import Contact from "./components/home/Contact";
 import Projects from "./components/home/Projects";
 import ScrollToTop from "./components/extra/SCrollToTop";
+import Practice from "./components/home/Login";
+import Featurs from "./components/home/Featurs";
 
 export default function Main() {
   return (
@@ -14,7 +16,9 @@ export default function Main() {
       <Blog />
       <Contact />
       <Projects />
-      <ScrollToTop/>
+
+      <Practice />
+      <Featurs/>
     </div>
   );
 }
