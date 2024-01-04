@@ -4,7 +4,7 @@ import React from "react";
 const Home = () => {
   return (
     <div className="mx-auto  min-h-screen pt-1" id="home">
-      <main className="bg-gray-100 dark:bg-gray-800 dark:text-white font-montserrat">
+      <main className=" dark:bg-gray-800 dark:text-white font-montserrat">
         {/* <header className="h-24 sm:h-32 flex items-center">
           <div className="container mx-auto px-6 sm:px-12 flex items-center justify-between">
             <div className="font-black text-blue-900 text-2xl flex items-start">
@@ -390,7 +390,7 @@ const Home = () => {
             </svg>
           </div>
           <div className="sm:w-5/12 xl:w-4/12 flex flex-col items-start sm:items-end sm:text-right ml-auto mt-8 sm:mt-0 relative z-10 xl:pt-20 mb-16 sm:mb-0">
-            <h1 className="text-4xl lg:text-5xl  dark:text-white  leading-none mb-4 font-black">
+            <h1 className="text-4xl lg:text-5xl  dark:text-white  leading-none mb-4">
               Business Landing Page
             </h1>
             <p className="lg:text-lg mb-4 sm:mb-12 dark:text-white  ">

@@ -44,7 +44,7 @@ export default function RootLayout({
           {" "}
           {/* <OneNav/> */}
           <header>
-            <NavBar />
+            {/* <NavBar /> */}
           </header>
           <main className="">
             {children}
